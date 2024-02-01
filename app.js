@@ -11,10 +11,19 @@ const color = document.querySelector('.color')
 /*configurar um ouvinte de eventos click*/
 btn.addEventListener('click', ()=> {
     // get random number between 0 - 3 colors [o]
-const randomNumber = 3
+    // invocando a função
+const randomNumber = getRandomNumber()
+console.log(randomNumber)
 
 // dentro do meu body estou estilizando o background = com o array de cores 
 document.body.style.backgroundColor = colors[randomNumber]
 // pegando a informação do array
 color.textContent = colors[randomNumber]
 })
+
+// vamos criar numeros aleatórios de 0 até 4
+function getRandomNumber(){
+
+    return Math.floor(Math.random() * colors.length);
+}
+

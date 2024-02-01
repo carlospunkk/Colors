@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: #1d3c53;
 }
 
 .nav-center{
@@ -38,10 +38,10 @@ padding: 20px;
     text-decoration: none;
     
 }
-.text-hex:hover{
+.text-simple:hover{
     color: white;
 }
-.text-simple:hover{
+.text-hex:hover{
     color: white;
 }
 
